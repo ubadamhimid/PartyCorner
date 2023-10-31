@@ -24,3 +24,18 @@ VALUES
     ('Vlinder kostuum', 'Mooi vlinderkostuum voor kinderen', 'KidsParty', '2023-10-25', 1, 24.99),
     ('Ninja kostuum kind', 'Stoer ninja kostuum voor kinderen', 'KidsParty', '2023-10-25', 1, 19.99),
     ('Pinata Aap', 'Leuke aapvormige pinata voor feesten', 'PartySupplies', '2023-10-25', 1, 12.99);
+
+
+-- Create a table for categories
+CREATE TABLE categories (
+    category_id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR(255) NOT NULL,
+    description TEXT
+);
+
+-- Insert sample categories into the "categories" table
+INSERT INTO categories (category_name, description)
+VALUES
+    ('Category 1', 'Description for Category 1'),
+    ('Category 2', 'Description for Category 2'),
+    ('Category 3', 'Description for Category 3');
